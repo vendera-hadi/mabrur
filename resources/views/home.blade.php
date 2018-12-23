@@ -1,22 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
+<div class="container-full h-100">
+    <div class="row justify-content-center h-100">
+      <!-- left -->
+      @include('leftnav')
+      <!-- right -->
+        <div class="col-md-9 shadow-left h-100">
+          @include('header', ['title' => 'Scan/Photo'])
+          
         </div>
     </div>
 </div>
