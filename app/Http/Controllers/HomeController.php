@@ -31,4 +31,14 @@ class HomeController extends Controller
     {
         return view('privacy');
     }
+
+    public function faq()
+    {
+        return view('faq');
+    }
+
+    public function timeline()
+    {
+        return view('timeline');
+    }
 }

@@ -13,6 +13,8 @@
 
 Route::group(['middleware' => ['auth']], function () {
   Route::get('/', 'HomeController@index')->name('home');
+  Route::get('/faq', 'HomeController@faq')->name('faq');
+  Route::get('/timeline', 'HomeController@timeline')->name('timeline');
 });
 
 Route::get('/privacy', 'HomeController@privacy')->name('privacy');

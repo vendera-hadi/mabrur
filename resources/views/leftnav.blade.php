@@ -13,7 +13,7 @@
       <nav class="sidebar-sticky w-100">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <a class="nav-link {{ $selected == 'scan' ? 'active' : ''}}" href="{{route('home')}}">
               Scan/Photo
             </a>
           </li>
@@ -39,12 +39,12 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link {{ $selected == 'timeline' ? 'active' : ''}}" href="{{route('timeline')}}">
               Time Line
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link {{ $selected == 'faq' ? 'active' : ''}}" href="{{route('faq')}}">
               FAQ
             </a>
           </li>
