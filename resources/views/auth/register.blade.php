@@ -4,7 +4,9 @@
 <div class="container-full h-100 register">
     <div class="row justify-content-center h-100">
         <div class="col-md-8 text-center panel">
-          <img src="{{asset('images/logo.png')}}" width="200" alt="logo" title="logo" class="mt-3">
+          <a href="{{route('home')}}">
+            <img src="{{asset('images/logo.png')}}" width="200" alt="logo" title="logo" class="mt-3">
+          </a>
           <p class="mt-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
