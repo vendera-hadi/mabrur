@@ -33,6 +33,9 @@ html, body {
 
 .register {
   background-color: #e1fcf3;
+  background: url(/images/reg-bottom.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 
   .panel{
     height: 100%;
