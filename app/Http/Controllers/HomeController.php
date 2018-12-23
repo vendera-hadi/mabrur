@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-      
+
     }
 
     /**
@@ -23,6 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // \Auth::logout();
         return view('home');
+    }
+
+    public function privacy()
+    {
+        return view('privacy');
     }
 }

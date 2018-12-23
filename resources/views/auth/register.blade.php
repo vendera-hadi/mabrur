@@ -65,8 +65,9 @@
                 <div class="col-md-6">
                   <select name="category" class="form-control">
                     <option value="" selected>Pilih Kategori</option>
-                    <option>Umum</option>
-                    <option>SMA</option>
+                    @foreach(App\Models\Category::all() as $cat)
+                      <option value="{{$cat->id}}">{{$cat->name}}</option>
+                    @endforeach
                   </select>
                 </div>
             </div>

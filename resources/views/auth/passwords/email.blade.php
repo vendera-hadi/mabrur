@@ -15,7 +15,7 @@
               <div class="form-group row justify-content-center mt-3">
                   <div class="col-md-6">
                       <div class="alert alert-success" role="alert">
-                          Hahahaha
+                          {{ session('status') }}
                       </div>
                   </div>
               </div>

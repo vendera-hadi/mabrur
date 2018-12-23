@@ -15,4 +15,5 @@ Route::group(['middleware' => ['auth']], function () {
   Route::get('/', 'HomeController@index')->name('home');
 });
 
+Route::get('/privacy', 'HomeController@privacy')->name('privacy');
 Auth::routes();
