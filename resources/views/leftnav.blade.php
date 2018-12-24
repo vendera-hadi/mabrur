@@ -13,28 +13,23 @@
       <nav class="sidebar-sticky w-100">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link {{ $selected == 'scan' ? 'active' : ''}}" href="{{route('home')}}">
-              Scan/Photo
+            <a class="nav-link {{ $selected == 'tabungan' ? 'active' : ''}}" href="{{route('home')}}">
+              Scan/Foto Tabungan Haji
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Link Video
+            <a class="nav-link {{ $selected == 'gallery' ? 'active' : ''}}" href="{{route('galeri')}}">
+              Galeri VLOG
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Cover Video
+            <a class="nav-link {{ $selected == 'upload' ? 'active' : ''}}" href="{{route('upload')}}">
+              Link VLOG
             </a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Sinopsis<br>
-              <small>(Max 150 characters)</small>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link {{ $selected == 'terms' ? 'active' : ''}}" href="{{route('terms')}}">
               S & K
             </a>
           </li>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // \Auth::logout();
         return view('home');
     }
 
@@ -40,5 +40,30 @@ class HomeController extends Controller
     public function timeline()
     {
         return view('timeline');
+    }
+
+    public function upload()
+    {
+        return view('upload');
+    }
+
+    public function gallery()
+    {
+        return view('gallery');
+    }
+
+    public function terms()
+    {
+        return view('terms');
+    }
+
+    public function upload_tabungan(Request $request)
+    {
+      $path = $request->file('file')->store('tabhaji','public');
+      $user = Auth::user();
+      $user->scan_tabungan = $path;
+      $user->uploaded_at = date("Y-m-d H:i:s");
+      $user->save();
+      return redirect()->back()->with('success', 'Upload Berhasil');
     }
 }

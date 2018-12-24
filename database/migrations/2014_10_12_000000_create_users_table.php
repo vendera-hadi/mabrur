@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->integer('category_id');
             $table->string('role')->default('member');
+            $table->text('scan_tabungan')->nullable();
+            $table->datetime('uploaded_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

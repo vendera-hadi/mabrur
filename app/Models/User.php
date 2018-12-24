@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'category_id', 'roles'
+        'name', 'email', 'password', 'category_id', 'roles', 'scan_tabungan'
     ];
 
     /**
@@ -31,5 +31,10 @@ class User extends Authenticatable
     public function category()
     {
         return $this->belongsTo('App\Models\Category');
+    }
+
+    public function video()
+    {
+        return $this->hasOne('App\Models\Video');
     }
 }
