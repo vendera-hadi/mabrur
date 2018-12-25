@@ -78,7 +78,7 @@
                 <div class="col-md-6 pl-4 ml-3">
                   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                   <label class="form-check-label" for="defaultCheck1">
-                    Dengan mendaftar, kamu setuju degnan ketentuan dan kebijakan privasi. <a href="#">Pelajari lebih lanjut</a>
+                    Dengan mendaftar, kamu setuju degnan ketentuan dan kebijakan privasi. <a href="{{route('privacy')}}" target="_blank">Pelajari lebih lanjut</a>
                   </label>
                 </div>
             </div>

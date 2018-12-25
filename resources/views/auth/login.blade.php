@@ -12,8 +12,10 @@
               <div class="col-sm-8 content-area">
                 <h1 class="font-weight-bold text-orange">Welcome to Mabrur</h1>
                 <h6 class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
-                <div class="mt-3">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/3nQNiWdeH2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="my-3">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3nQNiWdeH2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
                 </div>
               </div>
             </div>
