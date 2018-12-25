@@ -26,24 +26,30 @@
                 @else
                   <div class="container">
                     <div class="row">
+                      @foreach($videos as $video)
                       <!-- video -->
                       <div class="col-sm-6 mb-4">
                         <div class="card">
                           <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="{{$video->embed_code}}" allowfullscreen></iframe>
                           </div>
                           <div class="card-body">
-                            <h5 class="card-title">Video Goyang itik</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">by <a href="#">Zaskia Gotik</a></h6>
+                            <h5 class="card-title">{{$video->title}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">by <a href="#">{{$video->user->name}}</a></h6>
                           </div>
                         </div>
                       </div>
                       <!-- video -->
-
+                      @endforeach
                     </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        {{$videos->links()}}
+                      </div>
+                    </div>
+                  </div>
                   @endif
 
-                  </div>
                 <!-- content -->
               </div>
             </div>

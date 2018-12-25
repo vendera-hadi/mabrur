@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Video;
 use Auth;
 
 class HomeController extends Controller
@@ -49,7 +50,8 @@ class HomeController extends Controller
 
     public function gallery()
     {
-        return view('gallery');
+        $data['videos'] = Video::paginate(2);
+        return view('gallery', $data);
     }
 
     public function terms()
@@ -65,5 +67,16 @@ class HomeController extends Controller
       $user->uploaded_at = date("Y-m-d H:i:s");
       $user->save();
       return redirect()->back()->with('success', 'Upload Berhasil');
+    }
+
+    public function linkupload(Request $request)
+    {
+      $video = Auth::user()->video ? Auth::user()->video : new Video;
+      $video->user_id = Auth::id();
+      $video->title = $request->title;
+      $video->url = $request->link;
+      $video->embed_code = $request->embed_code;
+      $video->save();
+      return redirect()->back()->with('success', 'Link Berhasil Disimpan');
     }
 }

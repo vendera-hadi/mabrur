@@ -22,6 +22,7 @@ window.Vue = require('vue');
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('upload-preview', require('./components/UploadPreview.vue').default);
+Vue.component('video-input', require('./components/VideoInput.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

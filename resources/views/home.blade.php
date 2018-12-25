@@ -17,6 +17,9 @@
                   @if (session('success'))
                   <div class="alert alert-success" role="alert">
                       {{ session('success') }}
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                   </div>
                   @endif
                   <form action="{{route('home')}}" method="post" enctype="multipart/form-data">
@@ -28,8 +31,14 @@
                         {{ empty(Auth::user()->scan_tabungan) ? "Belum Upload" : "Sudah Upload" }}
                       </p>
                     </div>
+                    @if(!empty(Auth::user()->scan_tabungan))
                     <div class="form-group">
-                      <label for="email">Upload:</label>
+                      <label for="email">Hasil Upload:</label><br>
+                      <img src="{{asset('storage/'.Auth::user()->scan_tabungan)}}" style="max-width:600px" alt="">
+                    </div>
+                    @endif
+                    <div class="form-group">
+                      <label for="email">{{ !empty(Auth::user()->scan_tabungan) ? "Reupload:" : "Upload:" }}</label>
                       <upload-preview></upload-preview>
                     </div>
                   </form>

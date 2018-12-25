@@ -33,11 +33,7 @@
               S & K
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {{ $selected == 'timeline' ? 'active' : ''}}" href="{{route('timeline')}}">
-              Time Line
-            </a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link {{ $selected == 'faq' ? 'active' : ''}}" href="{{route('faq')}}">
               FAQ
