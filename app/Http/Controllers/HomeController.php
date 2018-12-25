@@ -50,7 +50,7 @@ class HomeController extends Controller
 
     public function gallery()
     {
-        $data['videos'] = Video::paginate(2);
+        $data['videos'] = Video::paginate(12);
         return view('gallery', $data);
     }
 
