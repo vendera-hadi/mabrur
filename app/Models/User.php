@@ -28,6 +28,16 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function scopeMember($query)
+    {
+        return $query->where('role', 'member');
+    }
+
+    public function scopeHasUploaded($query)
+    {
+        return $query->whereRaw('scan_tabungan IS NOT NULL');
+    }
+
     public function category()
     {
         return $this->belongsTo('App\Models\Category');

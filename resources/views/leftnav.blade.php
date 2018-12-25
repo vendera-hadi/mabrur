@@ -22,18 +22,20 @@
               Galeri VLOG
             </a>
           </li>
+          @if(\Auth::user()->role != 'admin')
           <li class="nav-item">
             <a class="nav-link {{ $selected == 'upload' ? 'active' : ''}}" href="{{route('upload')}}">
               Link VLOG
             </a>
           </li>
+          @endif
 
           <li class="nav-item">
             <a class="nav-link {{ $selected == 'terms' ? 'active' : ''}}" href="{{route('terms')}}">
               S & K
             </a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link {{ $selected == 'faq' ? 'active' : ''}}" href="{{route('faq')}}">
               FAQ

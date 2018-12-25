@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Video;
+use App\Models\User;
 use Auth;
 
 class HomeController extends Controller
@@ -23,9 +24,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        $data = [];
+        if(Auth::user()->role == 'admin'){
+          $users = User::member()->hasUploaded();
+          if(!empty($request->name)) $users->where('name','like','%'.$request->name.'%');
+          if(!empty($request->category_id)) $users->where('category_id', $request->category_id);
+          $data['users'] = $users->paginate(12);
+        }
+        return view('home', $data);
     }
 
     public function privacy()
