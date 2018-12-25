@@ -16,6 +16,7 @@
           <p class="strike-bg mt-3"><span>atau</span></p>
 
           <form method="POST" action="{{ route('register') }}">
+            @csrf
             <div class="form-group row justify-content-center">
                 <div class="col-md-6">
                     <input id="name" type="text" placeholder="Nama Lengkap" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -63,7 +64,7 @@
             <div class="form-group row justify-content-center">
 
                 <div class="col-md-6">
-                  <select name="category" class="form-control">
+                  <select name="category" class="form-control" required>
                     <option value="" selected>Pilih Kategori</option>
                     @foreach(App\Models\Category::all() as $cat)
                       <option value="{{$cat->id}}">{{$cat->name}}</option>
@@ -75,7 +76,7 @@
             <div class="form-group row justify-content-center">
 
                 <div class="col-md-6 pl-4 ml-3">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                   <label class="form-check-label" for="defaultCheck1">
                     Dengan mendaftar, kamu setuju degnan ketentuan dan kebijakan privasi. <a href="#">Pelajari lebih lanjut</a>
                   </label>
