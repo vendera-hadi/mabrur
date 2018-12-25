@@ -10,7 +10,7 @@
           <p class="mt-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <a href="#">
+          <a href="{{route('oauth_login')}}">
             <img src="{{asset('images/google-btn.png')}}" alt="" title="register with google">
           </a>
           <p class="strike-bg mt-3"><span>atau</span></p>

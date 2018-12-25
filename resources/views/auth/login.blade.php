@@ -57,6 +57,11 @@
                         LOG IN
                       </button>
                     </div>
+                    <div class="form-check mt-3">
+                      <a href="{{route('oauth_login')}}">
+                        <img src="{{asset('images/google-btn.png')}}" class="w-100" alt="" title="register with google">
+                      </a>
+                    </div>
                   </form>
                   <div class="text-left pl-4 mt-3">
                     <a href="{{ route('password.request') }}" class="text-dark">

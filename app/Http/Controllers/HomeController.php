@@ -87,4 +87,16 @@ class HomeController extends Controller
       $video->save();
       return redirect()->back()->with('success', 'Link Berhasil Disimpan');
     }
+
+    public function googlereg(Request $request)
+    {
+      $newUser                  = new User;
+      $newUser->name            = $request->name;
+      $newUser->email           = $request->email;
+      $newUser->google_id       = $request->google_id;
+      $newUser->category_id     = $request->category_id;
+      $newUser->save();
+      auth()->login($newUser, true);
+      return redirect('/')->with('success', 'Register Success');
+    }
 }

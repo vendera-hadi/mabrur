@@ -22,5 +22,9 @@ Route::group(['middleware' => ['auth']], function () {
   Route::get('/timeline', 'HomeController@timeline')->name('timeline');
 });
 
+Route::get('/redirect', 'Auth\LoginController@redirectToProvider')->name('oauth_login');
+Route::get('/callback', 'Auth\LoginController@handleProviderCallback');
+Route::post('/google-register', 'HomeController@googlereg')->name('store_google');
+
 Route::get('/privacy', 'HomeController@privacy')->name('privacy');
 Auth::routes();
