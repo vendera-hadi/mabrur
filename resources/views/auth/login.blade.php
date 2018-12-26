@@ -27,7 +27,7 @@
             <div class="row justify-content-center">
               <div class="col-sm-12 text-center">
                 <div class="mt-5">
-                  <img src="{{asset('images/logo.png')}}" alt="">
+                  <img src="{{asset('images/logo.png')}}" class="img-fluid w-75" alt="">
 
                   <form class="mt-5" action="{{ route('login') }}" method="post">
                     @csrf
