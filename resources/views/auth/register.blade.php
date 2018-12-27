@@ -8,7 +8,7 @@
             <img src="{{asset('images/logo.png')}}" width="200" alt="logo" title="logo" class="mt-3">
           </a>
           <p class="mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Daftarkan diri kamu melalui google atau dengan mengisi form di bawah
           </p>
           <a href="{{route('oauth_login')}}">
             <img src="{{asset('images/google-btn.png')}}" alt="" title="register with google">

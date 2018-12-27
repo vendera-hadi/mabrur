@@ -3,7 +3,8 @@
   {{$title}}
   <a class="float-right" href="{{ route('logout') }}"
      onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-      <i class="fa fa-sign-out text-dark"></i>
+      <!-- <i class="fa fa-sign-out text-dark"></i> -->
+      <small class="text-dark" style="font-size: 14px;text-decoration: none;">Logout</small>
   </a>
 </h1>
 
