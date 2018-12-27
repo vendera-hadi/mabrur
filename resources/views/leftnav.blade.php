@@ -36,11 +36,11 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link {{ $selected == 'faq' ? 'active' : ''}}" href="{{route('faq')}}">
               FAQ
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
   </div>

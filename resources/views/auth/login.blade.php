@@ -10,11 +10,11 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-sm-8 content-area">
-                <h1 class="font-weight-bold text-orange">Welcome to Mabrur</h1>
-                <h6 class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                <h2 class="font-weight-bold text-orange">SELAMAT DATANG DI MINA</h2>
+                <h6 class="text-white">Kamu kreatif dan punya cita-cita untuk naik Haji? Saatnya kamu mulai menabung untuk wujudkan cita-citamu berangkat ke tanah suci bersama MINA (Mari Tunaikan Haji Selagi Muda) Vlog Competition. MINA Vlog Competition adalah sebuah program yang diselenggarakan oleh Badan Pengurus Keuangan Haji (BPKH) untuk mendukung para insan muda kreatif dalam menunaikan menunaikan ibadah Haji sejak dini dengan hadiah puluhan juta rupiah. Ingin submit vlog karya kamu? Yuk ikuti langkah-langkahnya pada video di bawah.</h6>
                 <div class="my-3">
                   <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3nQNiWdeH2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8ksKXD9lHQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@
                         LOG IN
                       </button>
                     </div>
-                    <div class="form-check mt-3">
+                    <div class="form-check mt-5">
                       <a href="{{route('oauth_login')}}">
                         <img src="{{asset('images/google-btn.png')}}" class="w-100" alt="" title="register with google">
                       </a>
