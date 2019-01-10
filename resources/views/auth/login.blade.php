@@ -15,18 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row justify-content-center h-100">
       <!-- left -->
         <div class="col-md-8 login-left-panel h-100">
-          <div class="hexagon-top"></div>
-          <div class="hexagon-bottom"></div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-sm-8 content-area">
-                <img src="{{asset('images/banner_home.jpg')}}" class="img-fluid"/>
-              </div>
-            </div>
-          </div>
+          <img src="http://lombavlog.bpkh.go.id/images/banner_home.jpg" class="img-fluid w-100 h-100">
         </div>
         <!-- right -->
-        <div class="col-md-4 login-right-panel">
+        <div class="col-md-4 login-right-panel" style="padding-right: 0px">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-sm-12 text-center">
