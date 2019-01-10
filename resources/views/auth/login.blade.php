@@ -14,11 +14,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container-full h-100">
     <div class="row justify-content-center h-100">
       <!-- left -->
-        <div class="col-md-8 login-left-panel h-100">
+        <div class="col-md-8 login-left-panel h-100 px-0">
           <img src="http://lombavlog.bpkh.go.id/images/banner_home.jpg" class="img-fluid w-100 h-100">
         </div>
         <!-- right -->
-        <div class="col-md-4 login-right-panel" style="padding-right: 0px">
+        <div class="col-md-4 login-right-panel">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-sm-12 text-center">
