@@ -20,13 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-sm-8 content-area">
-                <h2 class="font-weight-bold text-orange">SELAMAT DATANG DI MINA</h2>
-                <h6 class="text-white">Kamu kreatif dan punya cita-cita untuk naik Haji? Saatnya kamu mulai menabung untuk wujudkan cita-citamu berangkat ke tanah suci bersama MINA (Mari Tunaikan Haji Selagi Muda) Vlog Competition. MINA Vlog Competition adalah sebuah program yang diselenggarakan oleh Badan Pengurus Keuangan Haji (BPKH) untuk mendukung para insan muda kreatif dalam menunaikan menunaikan ibadah Haji sejak dini dengan hadiah puluhan juta rupiah. Ingin submit vlog karya kamu? Yuk ikuti langkah-langkahnya pada video di bawah.</h6>
-                <div class="my-3">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8ksKXD9lHQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
+                <img src="{{asset('images/banner_home.jpg')}}" class="img-fluid"/>
               </div>
             </div>
           </div>
