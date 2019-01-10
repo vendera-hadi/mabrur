@@ -94,6 +94,7 @@ class HomeController extends Controller
       $newUser->name            = $request->name;
       $newUser->email           = $request->email;
       $newUser->google_id       = $request->google_id;
+      $newUser->mobile_phone    = $request->mobile_phone;
       $newUser->category_id     = $request->category_id;
       $newUser->save();
       auth()->login($newUser, true);

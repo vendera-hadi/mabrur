@@ -14,8 +14,21 @@
               <input type="hidden" name="email" value="{{$email}}">
               <input type="hidden" name="google_id" value="{{$google_id}}">
 
-
               <div class="form-group row justify-content-center mt-3">
+
+                <div class="col-md-6">
+                    <input placeholder="Masukkan No Handphone" type="text" class="form-control {{ $errors->has('mobile_phone') ? ' is-invalid' : '' }}" name="mobile_phone" value="{{ old('mobile_phone') }}" required>
+
+                    @if ($errors->has('mobile_phone'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('mobile_phone') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+
+
+              <div class="form-group row justify-content-center">
                   <div class="col-md-6">
                     <select class="form-control" name="category_id" required>
                       <option value="">Pilih Kategori</option>

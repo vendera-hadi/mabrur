@@ -19,11 +19,24 @@
             @csrf
             <div class="form-group row justify-content-center">
                 <div class="col-md-6">
-                    <input id="name" type="text" placeholder="Nama Lengkap" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                    <input id="name" type="text" placeholder="Nama Lengkap" class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
 
                     @if ($errors->has('name'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('name') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+
+            <div class="form-group row justify-content-center">
+
+                <div class="col-md-6">
+                    <input placeholder="Masukkan No Handphone" type="text" class="form-control {{ $errors->has('mobile_phone') ? ' is-invalid' : '' }}" name="mobile_phone" value="{{ old('mobile_phone') }}" required>
+
+                    @if ($errors->has('mobile_phone'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('mobile_phone') }}</strong>
                         </span>
                     @endif
                 </div>
