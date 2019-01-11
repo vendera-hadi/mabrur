@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container-full h-100">
     <div class="row justify-content-center h-100">
       <!-- left -->
-        <div class="col-md-8 login-left-panel h-100 px-0">
+        <div class="col-md-8 login-left-panel px-0">
           <img src="http://lombavlog.bpkh.go.id/images/banner_home.jpg" class="img-fluid w-100">
         </div>
         <!-- right -->

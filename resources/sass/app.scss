@@ -23,6 +23,7 @@ html, body {
 .login {
   &-left-panel{
     background-color: #00b69f;
+    height: 100%;
 
     .content-area{
       margin-top: 5rem;
@@ -187,6 +188,7 @@ img.preview {
 @media only screen and (max-width: 414px) {
   .login {
     &-left-panel{
+      height: auto;
       img {
         height: auto;
       }
