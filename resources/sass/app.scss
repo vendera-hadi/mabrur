@@ -27,6 +27,10 @@ html, body {
     .content-area{
       margin-top: 5rem;
     }
+
+    img {
+      height: 100%;
+    }
   }
   &-right-panel{
     background-color: #e1fcf3;
@@ -178,4 +182,14 @@ img.preview {
     background-color: white;
     border: 1px solid #DDD;
     padding: 5px;
+}
+
+@media only screen and (max-width: 414px) {
+  .login {
+    &-left-panel{
+      img {
+        height: auto;
+      }
+    }
+  }
 }
