@@ -16,6 +16,7 @@ class UserExport implements FromCollection, WithHeadings, ShouldAutoSize
         return [
             'Name',
             'Email',
+            'No HP',
             'Scan tabungan'
         ];
     }
@@ -25,7 +26,7 @@ class UserExport implements FromCollection, WithHeadings, ShouldAutoSize
     public function collection()
     {
         $asset_url = asset("storage/");
-        $result = User::where('role','member')->select("name", "email", \DB::raw("CONCAT('$asset_url/', scan_tabungan) as image_path"))->get();
+        $result = User::where('role','member')->select("name", "email", "mobile_phone", \DB::raw("CONCAT('$asset_url/', scan_tabungan) as image_path"))->get();
         return $result;
     }
 }
