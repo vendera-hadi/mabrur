@@ -20,6 +20,7 @@ Route::group(['middleware' => ['auth']], function () {
   Route::get('/terms', 'HomeController@terms')->name('terms');
   Route::get('/faq', 'HomeController@faq')->name('faq');
   Route::get('/timeline', 'HomeController@timeline')->name('timeline');
+  Route::get('/download', 'HomeController@download')->name('download');
 });
 
 Route::get('/redirect', 'Auth\LoginController@redirectToProvider')->name('oauth_login');

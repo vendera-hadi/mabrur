@@ -41,8 +41,6 @@
 
                       <li>Peserta wajib menyertakan caption menarik pada caption video yang diproduksi maksimal 300 kata.</li>
 
-                      <li>Peserta wajib menyertakan poster digital (ukuran 1920 x 1080 pixel) dari video yang dikompetisikan dengan format JPEG dengan kualitas HQ.</li>
-
                       <li>Pengunggahan video dilakukan dengan mengirimkan link URL vlog tersebut melalui microsite <a href="http://www.lombavlogbpkh.com">www.lombavlogbpkh.com</a></li>
 
                       <li>Batas pengunggahan vlog sampai tanggal 26 Januari 2019 pukul 23.59</li>

@@ -36,6 +36,14 @@
             </a>
           </li>
 
+          @if(\Auth::user()->role == 'admin')
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('download')}}">
+              Download Data
+            </a>
+          </li>
+          @endif
+
           <!-- <li class="nav-item">
             <a class="nav-link {{ $selected == 'faq' ? 'active' : ''}}" href="{{route('faq')}}">
               FAQ

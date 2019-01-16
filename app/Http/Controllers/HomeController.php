@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Video;
 use App\Models\User;
+use App\Exports\UserExport;
+use Maatwebsite\Excel\Facades\Excel;
 use Auth;
 
 class HomeController extends Controller
@@ -99,5 +101,10 @@ class HomeController extends Controller
       $newUser->save();
       auth()->login($newUser, true);
       return redirect('/')->with('success', 'Register Success');
+    }
+
+    public function download()
+    {
+      return Excel::download(new UserExport, 'data.xlsx');
     }
 }
