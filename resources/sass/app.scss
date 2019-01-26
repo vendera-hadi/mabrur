@@ -56,18 +56,18 @@ html, body {
     background: url(/images/hexagon-top.png) no-repeat;
     background-size: contain;
     top: 0;
-    right: 0;
+    right: -60px;
     width: 17%;
-    height: 25%;
+    height: 40%;
   }
   &-bottom{
     position: absolute;
     background: url(/images/hexagon-bottom.png) no-repeat;
     background-size: contain;
     bottom: 0;
-    left: 0;
-    width: 19%;
-    height: 25%;
+    left: -60px;
+    width: 40%;
+    height: 40%;
   }
 }
 
@@ -185,6 +185,14 @@ img.preview {
     padding: 5px;
 }
 
+.how-title {
+  padding-left: 10%;
+}
+
+.bg-navy {
+  background-color: #0a4f79;
+}
+
 @media only screen and (max-width: 414px) {
   .login {
     &-left-panel{
@@ -193,5 +201,26 @@ img.preview {
         height: auto;
       }
     }
+  }
+
+  .hexagon {
+    &-top{
+      display: none;
+    }
+    &-bottom{
+      display: none;
+    }
+  }
+
+  .main-banner {
+    width: 100% !important;
+  }
+
+  .how-title {
+    padding-left: 0;
+  }
+
+  .how-arrow {
+    display: none;
   }
 }
